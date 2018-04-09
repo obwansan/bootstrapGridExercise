@@ -1,0 +1,48 @@
+body {
+    background-color: #D2D2D2;
+}
+
+.container {
+    margin: 0 40px;
+}
+
+.row {
+    margin: 1px 0;
+}
+
+.headerLeft,
+.headerRight,
+.headerMiddle {
+    height: 60px;
+}
+
+.headerLeft {
+    background-color: #53B1A2;
+}
+
+.headerRight {
+    background-color: #6DCFBF;
+}
+
+.headerMiddle {
+    background-color: azure;
+}
+
+.heroFind,
+.smallFind {
+    height: 360px;
+}
+
+.heroFind {
+    background-image: url("imgs/heroFindTuscanVilla.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.smallFind {
+    background-image: url("imgs/smallFindTuscanVilla.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
