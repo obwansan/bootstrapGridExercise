@@ -3,11 +3,17 @@ body {
 }
 
 .container {
-    margin: 0 40px;
+    margin: 0 auto;
 }
 
 .row {
-    margin: 1px 0;
+    margin: 1px auto;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-12 {
+
 }
 
 .headerLeft,
@@ -21,28 +27,60 @@ body {
 }
 
 .headerRight {
-    background-color: #6DCFBF;
+    background-color: #f7ecb5;
 }
 
 .headerMiddle {
-    background-color: azure;
+    background-color: #9acfea;
 }
 
 .heroFind,
-.smallFind {
+.smallFind,
+.boxRow1-1,
+.boxRow1-2,
+.boxRow1-3,
+.boxRow2-1,
+.boxRow2-2,
+.boxRow2-3 {
     height: 360px;
 }
 
 .heroFind {
-    background-image: url("imgs/heroFindTuscanVilla.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-color: #3e8f3e;
+    /*background-image: url("imgs/heroFindTuscanVilla.png");*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: 50% 50%;*/
 }
 
 .smallFind {
-    background-image: url("imgs/smallFindTuscanVilla.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-color: #5bc0de;
+    /*background-image: url("imgs/smallFindTuscanVilla.png");*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: 50% 50%;*/
+}
+
+.boxRow1-1 {
+    background-color: #761c19;
+}
+
+.boxRow1-2 {
+    background-color: aqua;
+}
+
+.boxRow1-3 {
+    background-color: violet;
+}
+
+.boxRow2-1 {
+    background-color: blue;
+}
+
+.boxRow2-2 {
+    background-color: red;
+}
+
+.boxRow2-3 {
+    background-color: green;
 }
