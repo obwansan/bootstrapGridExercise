@@ -53,11 +53,12 @@ body {
 }
 
 .heroFind {
-    background-color: #3e8f3e;
-    /*background-image: url("imgs/heroFindTuscanVilla.png");*/
-    /*background-size: cover;*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: 50% 50%;*/
+    /*background-color: #3e8f3e;*/
+    /*position: relative;*/
+    background-image: url("imgs/heroFindTuscanVilla.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .smallFind {
@@ -66,6 +67,15 @@ body {
     /*background-size: cover;*/
     /*background-repeat: no-repeat;*/
     /*background-position: 50% 50%;*/
+}
+
+.homeFromHome {
+    margin-top: 160px;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
 }
 
 .boxRow1-1 {
