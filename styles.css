@@ -12,10 +12,6 @@ body {
     padding-left: 10px;
 }
 
-.col-xs-12 {
-
-}
-
 .headerLeft,
 .headerRight,
 .headerMiddle {
@@ -41,7 +37,11 @@ body {
 .boxRow1-3,
 .boxRow2-1,
 .boxRow2-2,
-.boxRow2-3 {
+.boxRow2-3,
+.boxRow3-1,
+.boxRow3-2,
+.boxRow3-3,
+.footer {
     height: 360px;
 }
 
@@ -73,6 +73,10 @@ body {
     background-color: violet;
 }
 
+.boxRow1-4 {
+    background-color: purple;
+}
+
 .boxRow2-1 {
     background-color: blue;
 }
@@ -83,4 +87,28 @@ body {
 
 .boxRow2-3 {
     background-color: green;
+}
+
+.boxRow2-4 {
+    background-color: purple;
+}
+
+.boxRow3-1 {
+    background-color: lightsalmon;
+}
+
+.boxRow3-2 {
+    background-color: darkgoldenrod;
+}
+
+.boxRow3-3 {
+    background-color: olive;
+}
+
+.boxRow3-4 {
+    background-color: purple;
+}
+
+.footer {
+    background-color: #E4E4E4;
 }
