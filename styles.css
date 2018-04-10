@@ -4,6 +4,7 @@ body {
 
 .container {
     margin: 0 auto;
+    width:  1450px;
 }
 
 .row {
@@ -35,14 +36,20 @@ body {
 .boxRow1-1,
 .boxRow1-2,
 .boxRow1-3,
+.boxRow1-4,
 .boxRow2-1,
 .boxRow2-2,
 .boxRow2-3,
+.boxRow2-4,
 .boxRow3-1,
 .boxRow3-2,
 .boxRow3-3,
-.footer {
+.boxRow3-4 {
     height: 360px;
+}
+
+.footer {
+    height: 250px;
 }
 
 .heroFind {
@@ -90,7 +97,7 @@ body {
 }
 
 .boxRow2-4 {
-    background-color: purple;
+    background-color: blue;
 }
 
 .boxRow3-1 {
@@ -106,9 +113,48 @@ body {
 }
 
 .boxRow3-4 {
-    background-color: purple;
+    background-color: aqua;
 }
 
 .footer {
     background-color: #E4E4E4;
+}
+
+/****************************
+Media Queries
+*****************************/
+
+@media only screen and (max-width: 1450px) {
+    .container {
+        width: 1075px;
+    }
+}
+
+@media only screen and (max-width: 1085px) {
+    .container {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .container {
+        width: 320px;
+    }
+    .heroFind,
+    .smallFind,
+    .boxRow1-1,
+    .boxRow1-2,
+    .boxRow1-3,
+    .boxRow1-4,
+    .boxRow2-1,
+    .boxRow2-2,
+    .boxRow2-3,
+    .boxRow2-4,
+    .boxRow3-1,
+    .boxRow3-2,
+    .boxRow3-3,
+    .boxRow3-4,
+    .footer {
+        height: 320px;
+    }
 }
