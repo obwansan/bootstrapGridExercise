@@ -138,13 +138,13 @@ Media Queries
 
 @media only screen and (max-width: 1030px) {
     .container {
-        width: 600px;
+        width: 635px;
     }
 }
 
 @media only screen and (max-width: 640px) {
     .container {
-        width: 320px;
+        width: 360px;
     }
     .heroFind,
     .smallFind,
