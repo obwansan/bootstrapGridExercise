@@ -4,7 +4,7 @@ body {
 
 .container {
     margin: 0 auto;
-    width:  90%;
+    /*width: 320px;*/
 }
 
 .row {
@@ -53,8 +53,6 @@ body {
 }
 
 .heroFind {
-    /*background-color: #3e8f3e;*/
-    /*position: relative;*/
     background-image: url("imgs/heroFindTuscanVilla.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -63,10 +61,10 @@ body {
 
 .smallFind {
     background-color: #5bc0de;
-    /*background-image: url("imgs/smallFindTuscanVilla.png");*/
-    /*background-size: cover;*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: 50% 50%;*/
+    background-image: url("imgs/italyMap.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .homeFromHome {
@@ -133,6 +131,26 @@ body {
 /****************************
 Media Queries
 *****************************/
+
+@media (max-width: 640px)
+    .container {
+        width: 320px;
+    }
+
+@media (max-width: 1023px) and (min-width: 641px)
+    .container {
+        width: 640px;
+    }
+
+@media (max-width: 1399px) and (min-width: 1024px)
+    .container {
+        width: 1024px;
+    }
+
+@media (min-width: 1400px)
+    .container {
+        width: 1398px;
+    }
 
 /*@media only screen and (max-width: 1450px) {*/
     /*.container {*/
