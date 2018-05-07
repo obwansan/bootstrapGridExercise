@@ -15,8 +15,8 @@ body {
 
 .col-md-4,
 .col-lg-3 {
-     padding-right: 0;
-     padding-left: 0;
+     /*padding-right: 0;*/
+     /*padding-left: 0;*/
 }
 
 /*.img-responsive {*/
@@ -115,126 +115,142 @@ body {
     background-image: url("imgs/some-accomodation-ideas.png");
     background-size: cover;
     background-repeat: no-repeat;
-    /*background-position: 50% 50%;*/
-    /*width: 100%;*/
-    /*height: 0;*/
-    /*padding-top: 25.2%; !* (img-height / img-width * container-width) *!*/
+    background-position: 50% 50%;
 }
 
 .boxRow1-2 {
     background-image: url("imgs/seaside-villas.png");
     background-size: cover;
     background-repeat: no-repeat;
-    /*background-position: 50% 50%;*/
-    /*width: 100%;*/
-    /*height: 0;*/
-    /*padding-top: 25.2%; !* (img-height / img-width * container-width) *!*/
+    background-position: 50% 50%;
 }
 
 .boxRow1-3 {
     background-image: url("imgs/countryside-villas.png");
     background-size: cover;
     background-repeat: no-repeat;
-    /*background-position: 50% 50%;*/
-    /*width: 100%;*/
-    /*height: 0;*/
-    /*padding-top: 25.2%; !* (img-height / img-width * container-width) *!*/
+    background-position: 50% 50%;
 }
 
 .boxRow1-4 {
     background-image: url("imgs/chianti.png");
     background-size: cover;
     background-repeat: no-repeat;
-    /*background-position: 50% 50%;*/
-    /*width: 100%;*/
-    /*height: 0;*/
-    /*padding-top: 25.2%; !* (img-height / img-width * container-width) *!*/
+    background-position: 50% 50%;
 }
 
 .boxRow2-1 {
     background-image: url("imgs/villa-barberino.png");
     background-size: cover;
     background-repeat: no-repeat;
-    /*background-position: 50% 50%;*/
+    background-position: 50% 50%;
 }
 
 .boxRow2-2 {
     background-image: url("imgs/why-rent-a-villa.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .boxRow2-3 {
     background-image: url("imgs/poggio-al-vento.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .boxRow2-4 {
     background-image: url("imgs/why-windows-on-tuscany.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .boxRow3-1 {
     background-image: url("imgs/talk-to-our-experts.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .boxRow3-2 {
     background-image: url("imgs/villa-isabella.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .boxRow3-3 {
     background-image: url("imgs/our-clients-trust-us.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .boxRow3-4 {
     background-image: url("imgs/seen-on-sky-cbs.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .footer {
-    background-color: #E4E4E4;
+    background-image: url("imgs/footer.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
 }
 
 /****************************
-Media Queries
+Media Queries (Bootstrap 3.3)
 *****************************/
 
-/*@media (max-width: 640px) {*/
-    /*.container {*/
-        /*width: 320px;*/
-    /*}*/
-/*}*/
-
+/*.col-xs-*/
 @media (max-width: 768px) {
     .headerMiddle {
         background-position: 90% 50%;
     }
 }
 
+/*.col-sm-*/
 @media (max-width: 991px) {
-    /*.container {*/
-        /*width: 640px;*/
-    /*}*/
+    .container {
+        width: 75%;
+    }
     .headerMiddle {
         background-image: url("imgs/menu-bar-small.png");
     }
+    .boxRow1-1,
+    .boxRow1-2,
+    .boxRow1-3,
+    .boxRow1-4,
+    .boxRow2-1,
+    .boxRow2-2,
+    .boxRow2-3,
+    .boxRow2-4,
+    .boxRow3-1,
+    .boxRow3-2,
+    .boxRow3-3,
+    .boxRow3-4 {
+        margin-bottom: 3px;
+    }
+    div[class^="boxRow"] {
+        background-size: contain;
+        height: 0;
+        padding-top: 100%; /* (img-height / img-width * container-width) */
+    }
 }
 
+/*.col-md-*/
 @media (max-width: 992px) and (min-width: 1199px) {
     /*.container {*/
         /*width: 1024px;*/
     /*}*/
 }
 
+/*.col-lg-*/
 @media (min-width: 1200px) {
     /*.container {*/
         /*width: 1398px;*/
