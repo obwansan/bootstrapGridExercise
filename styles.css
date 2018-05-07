@@ -13,6 +13,19 @@ body {
     padding-left: 10px;
 }
 
+.col-md-4,
+.col-lg-3 {
+     padding-right: 0;
+     padding-left: 0;
+}
+
+/*.img-responsive {*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+/*}*/
+
+/*** Header ***/
+
 .headerLeft,
 .headerRight,
 .headerMiddle {
@@ -20,19 +33,34 @@ body {
 }
 
 .headerLeft {
-    background-color: #53B1A2;
+    background-image: url("imgs/windows-on-tuscany.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 .headerRight {
-    background-color: #f7ecb5;
+    background-image: url("imgs/all-villas.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .headerMiddle {
-    background-color: #9acfea;
+    background-image: url("imgs/menu-bar-big.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .heroFind,
-.smallFind,
+.smallFind {
+    height: 360px;
+}
+
 .boxRow1-1,
 .boxRow1-2,
 .boxRow1-3,
@@ -45,15 +73,20 @@ body {
 .boxRow3-2,
 .boxRow3-3,
 .boxRow3-4 {
-    height: 360px;
+    height: 280px;
 }
+
+/*.box-row-1 {*/
+    /*height: 282px;*/
+/*}*/
+
 
 .footer {
     height: 250px;
 }
 
 .heroFind {
-    background-image: url("imgs/heroFindTuscanVilla.jpeg");
+    background-image: url("imgs/feel-like-home-away-from-home.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -61,7 +94,7 @@ body {
 
 .smallFind {
     background-color: #5bc0de;
-    background-image: url("imgs/italyMap.png");
+    background-image: url("imgs/smallFindTuscanVilla.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -76,52 +109,95 @@ body {
     letter-spacing: 3.5px;
 }
 
+/*** Main ***/
+
 .boxRow1-1 {
-    background-color: #761c19;
+    background-image: url("imgs/some-accomodation-ideas.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-position: 50% 50%;*/
+    /*width: 100%;*/
+    /*height: 0;*/
+    /*padding-top: 25.2%; !* (img-height / img-width * container-width) *!*/
 }
 
 .boxRow1-2 {
-    background-color: aqua;
+    background-image: url("imgs/seaside-villas.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-position: 50% 50%;*/
+    /*width: 100%;*/
+    /*height: 0;*/
+    /*padding-top: 25.2%; !* (img-height / img-width * container-width) *!*/
 }
 
 .boxRow1-3 {
-    background-color: violet;
+    background-image: url("imgs/countryside-villas.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-position: 50% 50%;*/
+    /*width: 100%;*/
+    /*height: 0;*/
+    /*padding-top: 25.2%; !* (img-height / img-width * container-width) *!*/
 }
 
 .boxRow1-4 {
-    background-color: purple;
+    background-image: url("imgs/chianti.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-position: 50% 50%;*/
+    /*width: 100%;*/
+    /*height: 0;*/
+    /*padding-top: 25.2%; !* (img-height / img-width * container-width) *!*/
 }
 
 .boxRow2-1 {
-    background-color: blue;
+    background-image: url("imgs/villa-barberino.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-position: 50% 50%;*/
 }
 
 .boxRow2-2 {
-    background-color: red;
+    background-image: url("imgs/why-rent-a-villa.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .boxRow2-3 {
-    background-color: green;
+    background-image: url("imgs/poggio-al-vento.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .boxRow2-4 {
-    background-color: blue;
+    background-image: url("imgs/why-windows-on-tuscany.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .boxRow3-1 {
-    background-color: lightsalmon;
+    background-image: url("imgs/talk-to-our-experts.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .boxRow3-2 {
-    background-color: darkgoldenrod;
+    background-image: url("imgs/villa-isabella.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .boxRow3-3 {
-    background-color: olive;
+    background-image: url("imgs/our-clients-trust-us.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .boxRow3-4 {
-    background-color: aqua;
+    background-image: url("imgs/seen-on-sky-cbs.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .footer {
@@ -132,22 +208,38 @@ body {
 Media Queries
 *****************************/
 
-@media (max-width: 640px) {
-    .container {
-        width: 320px;
-    }
+/*@media (max-width: 640px) {*/
+    /*.container {*/
+        /*width: 320px;*/
+    /*}*/
+/*}*/
 
-@media (max-width: 1023px) and (min-width: 641px) {
-    .container {
-        width: 640px;
+@media (max-width: 768px) {
+    .headerMiddle {
+        background-position: 90% 50%;
     }
+}
 
-@media (max-width: 1399px) and (min-width: 1024px) {
-    .container {
-        width: 1024px;
+@media (max-width: 991px) {
+    /*.container {*/
+        /*width: 640px;*/
+    /*}*/
+    .headerMiddle {
+        background-image: url("imgs/menu-bar-small.png");
     }
+}
 
-@media (min-width: 1400px) {
-    .container {
-        width: 1398px;
-    }
+@media (max-width: 992px) and (min-width: 1199px) {
+    /*.container {*/
+        /*width: 1024px;*/
+    /*}*/
+}
+
+@media (min-width: 1200px) {
+    /*.container {*/
+        /*width: 1398px;*/
+    /*}*/
+    /*.headerMiddle {*/
+        /*background-image: url("imgs/menu-bar-big.png");*/
+    /*}*/
+}
