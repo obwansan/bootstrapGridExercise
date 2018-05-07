@@ -4,7 +4,6 @@ body {
 
 .container {
     margin: 0 auto;
-    /*width: 320px;*/
 }
 
 .row {
@@ -13,67 +12,43 @@ body {
     padding-left: 10px;
 }
 
-.col-md-4,
-.col-lg-3 {
-     /*padding-right: 0;*/
-     /*padding-left: 0;*/
-}
-
-/*.img-responsive {*/
-    /*width: 100%;*/
-    /*height: 100%;*/
-/*}*/
-
 /*** Header ***/
 
 .headerLeft,
 .headerRight,
 .headerMiddle {
     height: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .headerLeft {
     background-image: url("imgs/windows-on-tuscany.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    max-width: 100%;
-    max-height: 100%;
-
 }
 
 .headerRight {
     background-image: url("imgs/all-villas.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
 }
 
 .headerMiddle {
     background-image: url("imgs/menu-bar-big.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
 }
 
 .heroFind,
 .smallFind {
     height: 360px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .heroFind {
     background-image: url("imgs/feel-like-home-away-from-home.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
 }
 
 .smallFind {
-    background-color: #5bc0de;
     background-image: url("imgs/smallFindTuscanVilla.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
 }
 
 .homeFromHome {
@@ -158,6 +133,7 @@ Media Queries (Bootstrap 3.3)
 
 /*.col-xs-*/
 @media (max-width: 768px) {
+
     .container {
         width: 375px;
     }
@@ -173,6 +149,7 @@ Media Queries (Bootstrap 3.3)
 
 /*.col-sm-*/
 @media (min-width: 769px) and (max-width: 991px) {
+
     .container {
         width: 75%;
     }
@@ -188,7 +165,7 @@ Media Queries (Bootstrap 3.3)
     div[class^="boxRow"] {
         background-size: contain;
         height: 0;
-        padding-top: 100%; /* (img-height / img-width * container-width) */
+        padding-top: 100%; /* aspect-ratio: (img-height / img-width * container-width) */
     }
 
     .footer {
@@ -202,14 +179,4 @@ Media Queries (Bootstrap 3.3)
     .footer {
         background-image: url("imgs/footer-1200px.png");
     }
-}
-
-/*.col-lg-*/
-@media (min-width: 1200px) {
-    /*.container {*/
-        /*width: 1398px;*/
-    /*}*/
-    /*.headerMiddle {*/
-        /*background-image: url("imgs/menu-bar-big.png");*/
-    /*}*/
 }
