@@ -39,7 +39,7 @@ body {
     background-position: 50% 50%;
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain;
+
 }
 
 .headerRight {
@@ -59,30 +59,6 @@ body {
 .heroFind,
 .smallFind {
     height: 360px;
-}
-
-.boxRow1-1,
-.boxRow1-2,
-.boxRow1-3,
-.boxRow1-4,
-.boxRow2-1,
-.boxRow2-2,
-.boxRow2-3,
-.boxRow2-4,
-.boxRow3-1,
-.boxRow3-2,
-.boxRow3-3,
-.boxRow3-4 {
-    height: 280px;
-}
-
-/*.box-row-1 {*/
-    /*height: 282px;*/
-/*}*/
-
-
-.footer {
-    height: 250px;
 }
 
 .heroFind {
@@ -111,88 +87,60 @@ body {
 
 /*** Main ***/
 
-.boxRow1-1 {
+.boxRow {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-bottom: 3px;
+    height: 280px;
+}
+
+.accomodation-ideas {
     background-image: url("imgs/some-accomodation-ideas.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
 }
 
-.boxRow1-2 {
+.seaside-villas {
     background-image: url("imgs/seaside-villas.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
 }
 
-.boxRow1-3 {
+.countryside-villas {
     background-image: url("imgs/countryside-villas.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
 }
 
-.boxRow1-4 {
+.chianti {
     background-image: url("imgs/chianti.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
 }
 
-.boxRow2-1 {
+.villa-barberino {
     background-image: url("imgs/villa-barberino.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
 }
 
-.boxRow2-2 {
+.why-rent-a-villa {
     background-image: url("imgs/why-rent-a-villa.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
 }
 
-.boxRow2-3 {
+.poggio-al-vento {
     background-image: url("imgs/poggio-al-vento.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
 }
 
-.boxRow2-4 {
+.why-windows-on-tuscany {
     background-image: url("imgs/why-windows-on-tuscany.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
 }
 
-.boxRow3-1 {
+.talk-to-our-experts {
     background-image: url("imgs/talk-to-our-experts.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
 }
 
-.boxRow3-2 {
+.villa-isabella {
     background-image: url("imgs/villa-isabella.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
 }
 
-.boxRow3-3 {
+.our-clients-trust-us {
     background-image: url("imgs/our-clients-trust-us.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
 }
 
-.boxRow3-4 {
+.seen-on-sky-cbs {
     background-image: url("imgs/seen-on-sky-cbs.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
 }
 
 .footer {
@@ -200,6 +148,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    padding-top: 6%; /* (img-height / img-width * container-width) */
 
 }
 
@@ -209,45 +158,50 @@ Media Queries (Bootstrap 3.3)
 
 /*.col-xs-*/
 @media (max-width: 768px) {
+    .container {
+        width: 375px;
+    }
     .headerMiddle {
         background-position: 90% 50%;
+        background-image: url("imgs/menu-bar-small.png");
+    }
+    .footer {
+        background-image: url("imgs/footer-768px.png");
+        padding-top: 40%;
     }
 }
 
 /*.col-sm-*/
-@media (max-width: 991px) {
+@media (min-width: 769px) and (max-width: 991px) {
     .container {
         width: 75%;
     }
+
     .headerMiddle {
         background-image: url("imgs/menu-bar-small.png");
     }
-    .boxRow1-1,
-    .boxRow1-2,
-    .boxRow1-3,
-    .boxRow1-4,
-    .boxRow2-1,
-    .boxRow2-2,
-    .boxRow2-3,
-    .boxRow2-4,
-    .boxRow3-1,
-    .boxRow3-2,
-    .boxRow3-3,
-    .boxRow3-4 {
+
+    .boxRow {
         margin-bottom: 3px;
     }
+
     div[class^="boxRow"] {
         background-size: contain;
         height: 0;
         padding-top: 100%; /* (img-height / img-width * container-width) */
     }
+
+    .footer {
+        background-image: url("imgs/footer-992px.png");
+        padding-top: 15%;
+    }
 }
 
 /*.col-md-*/
 @media (max-width: 992px) and (min-width: 1199px) {
-    /*.container {*/
-        /*width: 1024px;*/
-    /*}*/
+    .footer {
+        background-image: url("imgs/footer-1200px.png");
+    }
 }
 
 /*.col-lg-*/
